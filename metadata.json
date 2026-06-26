@@ -1,0 +1,6 @@
+{
+  "name": "PsyOS",
+  "description": "Um sistema operacional de conhecimento baseado em ciência da aprendizagem e psicologia cognitiva.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

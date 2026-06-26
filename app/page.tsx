@@ -6,7 +6,7 @@ import { StorageService } from '@/lib/services/storage';
 import { BrainView } from '@/components/brain-view';
 import { LabView } from '@/components/lab-view';
 import { SettingsView } from '@/components/settings-view';
-import { Brain, Beaker, Settings, User, Sparkles } from 'lucide-react';
+import { Brain, Beaker, Settings, User, Sparkles, ActivitySquare, Sliders } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function Page() {
@@ -140,7 +140,7 @@ export default function Page() {
               }`}
             >
               <Brain className="h-4.5 w-4.5 shrink-0" />
-              <span>Cérebro</span>
+              <span>Espaço Mental</span>
             </button>
 
             <button
@@ -151,8 +151,8 @@ export default function Page() {
                   : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100/50 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-900/30'
               }`}
             >
-              <Beaker className="h-4.5 w-4.5 shrink-0" />
-              <span>Laboratório</span>
+              <ActivitySquare className="h-4.5 w-4.5 shrink-0" />
+              <span>Ritmos de Foco</span>
             </button>
 
             <button
@@ -163,8 +163,8 @@ export default function Page() {
                   : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100/50 dark:text-zinc-400 dark:hover:text-zinc-200 dark:hover:bg-zinc-900/30'
               }`}
             >
-              <Settings className="h-4.5 w-4.5 shrink-0" />
-              <span>Configurações</span>
+              <Sliders className="h-4.5 w-4.5 shrink-0" />
+              <span>Sintonia</span>
             </button>
           </nav>
         </div>
@@ -248,7 +248,7 @@ export default function Page() {
           }`}
         >
           <Brain className="h-5 w-5" />
-          <span className="text-[10px] font-medium font-sans">Cérebro</span>
+          <span className="text-[10px] font-medium font-sans">Espaço Mental</span>
         </button>
 
         <button
@@ -257,8 +257,8 @@ export default function Page() {
             activeTab === 'laboratorio' ? 'text-zinc-900 dark:text-zinc-100' : ''
           }`}
         >
-          <Beaker className="h-5 w-5" />
-          <span className="text-[10px] font-medium font-sans">Laboratório</span>
+          <ActivitySquare className="h-5 w-5" />
+          <span className="text-[10px] font-medium font-sans">Foco</span>
         </button>
 
         <button
@@ -267,8 +267,8 @@ export default function Page() {
             activeTab === 'configuracoes' ? 'text-zinc-900 dark:text-zinc-100' : ''
           }`}
         >
-          <Settings className="h-5 w-5" />
-          <span className="text-[10px] font-medium font-sans">Configurações</span>
+          <Sliders className="h-5 w-5" />
+          <span className="text-[10px] font-medium font-sans">Sintonia</span>
         </button>
       </nav>
     </div>
